@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="style.css">
-    <title>aula</title>
+    <title>Aquiles - Assistente Virtual</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h2>este é meu site</h2>
+
+    <div class="assistant-container">
+        <div class="aquiles-ring" id="aquilesRing"></div>
+        
+        <h2>Aquiles Skill</h2>
+        <p class="status" id="statusText">Aguardando comando...</p>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="message system">Olá! Eu sou o Aquiles. Diga "ajuda" para ver o que posso fazer.</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Digite um comando ou pergunta..." autocomplete="off">
+            <button id="sendBtn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
